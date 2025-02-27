@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover to Reveal</title>
+    <style>
+        .container {
+            width: 200px;
+            padding: 20px;
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .hidden-text {
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.4s ease, transform 0.4s ease;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .container:hover .hidden-text {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        Hover over me
+        <div class="hidden-text">Surprise! 🎉</div>
+    </div>
+
+</body>
+</html>
