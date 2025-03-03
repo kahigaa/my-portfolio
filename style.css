@@ -1,11 +1,12 @@
-*{margin: 0; padding: 0;}
+*{margin: 0%;
+  padding: 0%;}
 
 .header{
     width: 100%;
     height: 100vh;
     display: flex;
-    align-items: center;
-    background-color:#ffffe3;
+    align-items:center;
+    background-image: url('https://i.pinimg.com/474x/cc/08/ce/cc08ce600c3ec5eabace8e581aa9691b.jpg');
 }
 
 @font-face {
@@ -29,10 +30,10 @@ button {
    font-size: 15px;
    font-weight: 15;
    color:#1d1e18 ;
-   background:#ffffe3;
    transition: all 0.3s ease;
    cursor: pointer;
    color:#412f26;
+   background-color: transparent;
 }
 
 h1{color:#806044;}
@@ -76,7 +77,97 @@ h1:nth-child(2) {
    animation-delay: 0.3s; 
 }
 
+.abt{width: 100%;
+   height: 100vh;
+   display: flex;
+   align-items: center;}
 
+   .wrapper {
+   width: 33.33%;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 
+}
 
+h3{color:#806044;
+   font-family: 'satoshi bold';
+   font-size: 30px;}
+
+   @keyframes riseUp {
+      from {
+          opacity: 0;
+          transform: translateY(50px);
+      }
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+  
+  @keyframes dropDown {
+      from {
+          opacity: 0;
+          transform: translateY(-50px);
+      }
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+  
+
+  .about-me, .get-in-touch {
+      animation: riseUp 1.5s ease-out forwards;
+      animation-delay: 0.5s;
+  }
+  
+  
+  .skills {
+      animation: dropDown 1.5s ease-out forwards;
+      animation-delay: 0.7s;
+  }
+
+  img {
+   width: 300%;
+   height: 800%;
    
+}
+
+.container {
+   display: flex;
+   align-items: center; 
+   gap: 60px; 
+}
+
+.image {
+   max-width: 300px; 
+   flex-shrink: 0; 
+}
+
+.text-content {
+   flex: 1; 
+}
+
+@keyframes fadeInUp {
+   from {
+       opacity: 0;
+       transform: translateY(50px); 
+   }
+   to {
+       opacity: 1;
+       transform: translateY(0); 
+   }
+}
+
+.image {
+   animation: fadeInUp 1s ease-out 0.5s forwards;
+}
+
+
+  
+    
+
+
+  
